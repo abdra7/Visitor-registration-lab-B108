@@ -115,5 +115,4 @@ This system improves the administrative efficiency of lab attendance tracking, w
 
 ## 📄 License
 
-This project is for educational use only.
-
+This project is for educational use and can be implemented in practice.
