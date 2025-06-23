@@ -24,7 +24,7 @@ A web-based attendance management system designed to register and track student 
 ## 💽 Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** PHP (assumed based on context)
+- **Backend:** PHP 
 - **Database:** MySQL
 - **Others:** TVTC Branding integration
 
