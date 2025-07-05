@@ -81,24 +81,23 @@ function confirmLogout() {
     }
 }
 
-/**
- * Visits Page Functionality
- */
 function initializeVisitsPage() {
-    // Academic number field
     const academicNumberField = document.getElementById('academic_number');
-    if (academicNumberField) {
-        // Auto-fetch student name when user is done typing (debounced)
-        academicNumberField.addEventListener('keyup', debounce(fetchStudentName, 5000));
-        
-        // Removed the padding of academic number with zeros as requested
-    }
     
-    // Set focus on academic number field when page loads
     if (academicNumberField) {
+        let typingTimer;
+        const delay = 3400; 
+
+        academicNumberField.addEventListener('input', () => {
+            clearTimeout(typingTimer); // يلغي المؤقت كل مايكتب المتدرب
+            typingTimer = setTimeout(() => {
+                fetchStudentName(); // ينفذ من بعد توقف الكتابه ب 3400 ملي ثاية
+            }, delay);
+        });
+
         academicNumberField.focus();
     }
-    
+
 }
 
 /**
