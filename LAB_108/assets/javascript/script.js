@@ -99,8 +99,6 @@ function initializeVisitsPage() {
         academicNumberField.focus();
     }
     
-    // Auto-refresh active visits every 30 seconds
-    setInterval(refreshActiveVisits, 30000);
 }
 
 /**
@@ -229,26 +227,6 @@ function confirmCheckout(visitId, studentName) {
     }
 }
 
-/**
- * Refresh active visits table without page reload
- */
-function refreshActiveVisits() {
-    const activeVisitsContainer = document.querySelector('.card:nth-of-type(2)');
-    if (!activeVisitsContainer) return;
-    
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'visits.php?ajax=active_visits', true);
-    xhr.onload = function() {
-        if (this.status === 200) {
-           
-            const tableContainer = activeVisitsContainer.querySelector('table');
-            if (tableContainer && this.responseText.includes('<table>')) {
-                tableContainer.outerHTML = this.responseText;
-            }
-        }
-    };
-    xhr.send();
-}
 
 /**
  * Admins Page Functionality
