@@ -135,7 +135,6 @@ This project was developed by a dedicated team of students from the Computer Sci
 * Abdulaziz Alharbi
 * Faris Alsulami
 * Abdulrahman Altayyar
-* Sattam Alsulami
 * Talal Alotaibi
 
 ---
