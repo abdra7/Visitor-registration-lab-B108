@@ -161,3 +161,7 @@ This project was developed as part of the cooperative training program requireme
 
 **Developed by:** Students of the Computer Science Department, Umm Al-Qura University.
 **Under the supervision of:** The Technical and Vocational Training Corporation (TVTC).
+
+
+## References:
+**icons library :** https://fontawesome.com/
