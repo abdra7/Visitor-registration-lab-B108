@@ -164,4 +164,4 @@ This project was developed as part of the cooperative training program requireme
 
 
 ## References:
-**icons library :** https://fontawesome.com/
+**icons library :** https://fontawesome.com
